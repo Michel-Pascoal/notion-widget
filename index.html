@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,12 +28,12 @@ body{
 }
 
 .days {
-  background: #bdb2ff;
-  color: #183059;
+  background: #ffadad;
+  color: #183059;  
 }
 
 .hours {
-  background: #fdffb6;
+  background: #caffbf;
   color: #183059;
 }
 
@@ -43,7 +43,7 @@ body{
 }
 
 .seconds {
-  background: #caffbf;
+  background: #fdffb6;
   color: #183059;  
 }
 
@@ -65,7 +65,7 @@ body{
 
 .red {
   position: absolute;
-  background:  #bdb2ff;
+  background:  #ffadad;
   left: 18%;
   top: 9%;
   height: 65px;
@@ -106,7 +106,7 @@ body{
 </body>
 <script>
     const year = new Date().getFullYear();
-const myDate = new Date('May 17, 2023 00:00:00');
+const myDate = new Date('Oct 15, 2024 00:00:00');
 console.log(myDate);
 
 // countdown
@@ -125,10 +125,10 @@ let timer = setInterval(function() {
   let seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
   // display
-  document.getElementById("days").innerHTML=dias
-  document.getElementById("hours").innerHTML=horas
-  document.getElementById("minutes").innerHTML=minutos
-  document.getElementById("seconds").innerHTML=segundos
+  document.getElementById("days").innerHTML=days
+  document.getElementById("hours").innerHTML=hours
+  document.getElementById("minutes").innerHTML=minutes
+  document.getElementById("seconds").innerHTML=seconds
 
 
 
